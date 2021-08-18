@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Krislyph | Contacto</title>
+
+    <!-- Insersion del Bootstrap enlaces a los css y complementos adicionales-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/822b4fa56d.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/javascript/index.js"></script>
+</head>
+<body>
+    <div class="background_image_contacto" id="header">
+        <!--Inicio navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Krislyph</a> <button onclick="transparent_change()" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                    data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link link--elara" href="/"><span>Inicio</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link--elara" href="/galeria"><span>Galeria</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link--elara" href="/precios"><span>Precios</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link--elara" href="/biografia"><span>Biografia</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link--elara" href="/contacto"><span>Contacto</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fin navbar-->
+
+
+
+
+        <div class="container_fluid container_custom out_nav">
+            <div class="row align-self-center w-100">
+                <div class="col-12">
+                    <div class="hero-text">
+                        <h2 class="display-2">Contacto</h2>
+                    </div>
+                    <form action="/send_email" method="post" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre" name="nombre"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Telefono:</label>
+                    <input type="text" class="form-control" id="numero" placeholder="Ingrese su Numero de Telefono" name="numero"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su Correo" name="email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" rows="3" name="mensaje" placeholder="Ingrese su Mensaje"
+                        required></textarea>
+                </div>
+                <div class="row d-flex justify-content-center submit">
+                    <button type="submit" class="btn btn-outline-light">Enviar</button>
+                </div>
+            </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>

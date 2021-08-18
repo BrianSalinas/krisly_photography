@@ -1,0 +1,191 @@
+
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-toggler {
+	background: #fff;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+/*
+.nav-link.active, .nav-link:focus {
+	color: #fff;
+}
+*/
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+
+.nav-item a{
+	font-weight: 400;
+}
+
+.navbar{
+    background: rgb(102,47,205);
+    background:linear-gradient(66deg, rgba(102,47,205,1) 0%, rgba(139,59,176,1) 70%);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.5);
+	transition: 0.5s ease;
+}
+
+
+.link--elara::before {
+    transform-origin: 50% 100%;
+    transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+    clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.link--elara:hover::before {
+    transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
+    clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.link--elara span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.link--elara:hover span {
+    transform: translate3d(0, -2px, 0);
+}
+
+.nav-item a{
+	border-bottom: 2px solid transparent;
+	transition: 0.5s ease;
+}
+.nav-item a:hover{
+	border-bottom: 2px solid white;
+	transition: 0.5s ease;
+}
+
+/*=========================================================*/
+
+.example {
+  /*position: relative;*/
+  width: 80%;
+  padding-top: 50%;
+  margin: 2rem auto;
+}
+.example > .block {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  perspective: 1000px;
+}
+.example > .block:nth-of-type(1) {
+  height: 80%;
+  top: 10%;
+  left: 17%;
+  width: 15%;
+}
+.example > .block:nth-of-type(2) {
+  top: 0;
+  left: 35%;
+}
+.example > .block:nth-of-type(3) {
+  height: 80%;
+  top: 10%;
+  left: 64%;
+  width: 15%;
+}
+.example > .block > .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://res.cloudinary.com/dfqgg9f1y/image/upload/v1628922389/perfil_bsrtqy.jpg');
+  background-size: auto 100%;
+  box-shadow: -1vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+.example > .block > .side.-main {
+  height: 100%;
+  width: 100%;
+  transform: rotateY(30deg);
+  transform-origin: 0 50%;
+}
+.example > .block > .side.-left {
+  height: 100%;
+  width: 20%;
+  transform-origin: 0 50%;
+  transform: rotateY(-60deg) translateX(-100%);
+  filter: brightness(40%);
+}
+.example > .block:nth-of-type(1) > .side.-main {
+  background-position: 4% 50%;
+  background-size: auto 130%;
+}
+.example > .block:nth-of-type(1) > .side.-left {
+  background-position: 0 50%;
+  background-size: auto 130%;
+}
+.example > .block:nth-of-type(2) > .side.-main {
+  background-position: 50% 0;
+}
+.example > .block:nth-of-type(2) > .side.-left {
+  background-position: 28.5% 0;
+}
+.example > .block:nth-of-type(3) > .side.-main {
+  background-position: 96% 50%;
+  background-size: auto 130%;
+}
+.example > .block:nth-of-type(3) > .side.-left {
+  background-position: 78% 50%;
+  background-size: auto 130%;
+}
+/*=========================================================*/
+.seccion-1{
+    height: 100vh;
+}
+
+.nose{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: rgb(137, 102, 202);
+}
+
+.blockquote-custom {
+    position: relative;
+    font-size: 1.1rem;
+  }
+  
+  .blockquote-custom-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    left: 50px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .example{
+      position: relative;
+        margin-top: 70px;
+    }
+  }
