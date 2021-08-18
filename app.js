@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const dotenv = require("dotenv");
 const hbs = require("hbs");
-
+const port = process.env.PORT || 5501;
 dotenv.config({ path: './.env' });
 
 
@@ -31,6 +31,6 @@ app.use((req, res, next) => {
     res.status(404).render('index.hbs');
 });
 
-app.listen(11656, () => {
-    console.log("Server started on port 11656");
+app.listen(port, () => {
+    console.log("Server started on port "+port);
 });
