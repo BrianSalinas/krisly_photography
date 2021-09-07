@@ -19,7 +19,7 @@ app.use(express.json());
 
 //Descomentar para usar HBS
 
-//hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(__dirname + '/views/partials');
 //hbs.registerHelper(require("./views/helpers/miHelper"));
 app.set('view engine', 'hbs');
 

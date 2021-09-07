@@ -20,31 +20,31 @@ cloudinary.config({
   
 router.get("/",(req,res)=>{
 
-    res.render("index.hbs");
+    res.render("index.hbs",{index:true});
     
 });
 
 router.get("/galeria",(req,res)=>{
 
-    res.render("galeria.hbs");
+    res.render("galeria.hbs",{galeria:true});
     
 });
 
 router.get("/precios",(req,res)=>{
 
-    res.render("precios.hbs");
+    res.render("precios.hbs",{precios:true});
     
 });
 
 router.get("/biografia",(req,res)=>{
 
-    res.render("biografia.hbs");
+    res.render("biografia.hbs",{biografia:true});
     
 });
 
 router.get("/contacto",(req,res)=>{
 
-    res.render("contacto.hbs");
+    res.render("contacto.hbs",{contacto:true});
     
 });
 
