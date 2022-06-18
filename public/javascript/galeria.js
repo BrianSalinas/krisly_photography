@@ -1,4 +1,7 @@
-var gallery = document.querySelector('#gallery');
+
+
+var gallery = document.querySelector('#galleryDESACTIVATED');
+/*
 var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
 var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
 var resizeAll = function () {
@@ -9,6 +12,7 @@ var resizeAll = function () {
         el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
     });
 };
+
 gallery.querySelectorAll('img').forEach(function (item) {
     item.classList.add('byebye');
     if (item.complete) {
@@ -24,9 +28,19 @@ gallery.querySelectorAll('img').forEach(function (item) {
         });
     }
 });
+
 window.addEventListener('resize', resizeAll);
-gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-    item.addEventListener('click', function () {        
-        item.classList.toggle('full');        
+*/
+gallery.querySelectorAll('.gallery-itemDESACTIVATED').forEach(function (item) {
+    item.addEventListener('click', function (e) {   
+        e.preventDefault();
+        var ubicacion = document.getElementById("imagenModal");
+        var nodo = e.target;
+        var clone = nodo.cloneNode(true);
+        ubicacion.innerHTML = '';
+        ubicacion.appendChild(clone);
+        $('#exampleModal').modal('show');
+        //item.classList.toggle('full');        
     });
 });
+

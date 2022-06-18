@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 :root{
     --primary_color: #7A33FF;
     --secondary_color: #000000;
 }
-
 
 /*=============================================*/
 
@@ -50,6 +54,9 @@
 }
 .switch{
 	display: none;
+}
+.sizeModifier{
+    width: 50% !important;
 }
 
 @media (max-width: 992px) {

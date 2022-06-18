@@ -114,9 +114,11 @@
     margin: auto;
   }
   */
+  
   .byebye {
     opacity: 0;
   }
+  
   .byebye:hover {
     transform: scale(0.2) !important;
   }
@@ -158,7 +160,7 @@
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     }
   }
-  /*
+  
   @-moz-keyframes zoomin {
     0% {
       max-width: 50%;
@@ -238,11 +240,26 @@
       transform: rotate(0deg);
     }
   }
-  */
+  
 
 body{
     background-image: url("/assets/pattern2.png");
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 3rem;
+}
+
+#imagenModal img{
+  width: -webkit-fill-available;
+}
+.card{
+  background-color: transparent !important;
+  border: 0px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.card:hover{
+  transform: scale(1.1) !important;
+  transition: 0.5s ease;
 }
