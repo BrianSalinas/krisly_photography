@@ -271,3 +271,22 @@ body{
     background-attachment: fixed;
     background-size: 3rem;
 }
+.modal-title{
+	font-size: 25px !important;
+}
+.text-muted{
+	color: rgb(139, 139, 139) !important;
+}
+.modal-footer{
+	margin-top: 0.5rem;
+}
+.extraText{
+	margin-right: 0.5rem;
+}
+.rowFoot{
+	width: 100%;
+}
+.adv{
+	color: rgb(102,47,205);
+	font-weight: 600;
+}
