@@ -9,7 +9,7 @@
     z-index: -1;
 }
 .background_image_contacto{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), linear-gradient(66deg, rgba(102,47,205,0.5) 0%, rgba(88,45,168,0.5) 41%, rgba(0,0,0,0.5) 100%) ,url("/assets/contact.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), linear-gradient(66deg, rgba(102,47,205,0.5) 0%, rgba(88,45,168,0.5) 41%, rgba(0,0,0,0.5) 100%) ,url("/assets/contactbg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -307,10 +307,13 @@ color: white;
 	position: relative;
   }
 .section-divider:before {
-		content: " "; 
+		content: "";
+		/*content: url('../assets/Mesa_de_trabajo_2.png');*/
+		background: url('../assets/Mesa_de_trabajo_2.png') no-repeat 0 0;
+		background-size: 100%;
 		width: 6.5rem;
 		height: 6.5rem;
-		background: #fff;
+		background-color: #fff;
 		border-radius: 100%;
 		position: absolute;
 		top: -3.25rem;
@@ -318,6 +321,7 @@ color: white;
 		line-height: 6rem;
 		text-indent: 1.75rem;
 		font-size: 3rem;
+		z-index: 20;
 }
 
 .custom-card{

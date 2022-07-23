@@ -151,12 +151,14 @@
 }
 
  .card:nth-child(1):before {
-	 background-image: url(https://res.cloudinary.com/dfqgg9f1y/image/upload/v1629037297/mostrar%20standard/3_b7au0x.jpg);
+	 /*background-image: url(https://res.cloudinary.com/dfqgg9f1y/image/upload/v1629037297/mostrar%20standard/3_b7au0x.jpg);*/
+	 background-image: url('../assets/bg.jpg');
 }
 
 
  .card:nth-child(2):before {
-	 background-image: url(https://res.cloudinary.com/dfqgg9f1y/image/upload/v1629046451/graduaciones/2_bckejz.jpg);
+	 /*background-image: url(https://res.cloudinary.com/dfqgg9f1y/image/upload/v1629046451/graduaciones/2_bckejz.jpg);*/
+	 background-image: url('../assets/bg.jpg');
 }
 
 /*
